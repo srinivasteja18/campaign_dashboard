@@ -23,7 +23,7 @@ export default function Dashboard() {
 
   const handlePlatformOnChange = (e) => {
     const platform = e.target.value;
-    if (platform == "All Platforms") {
+    if (platform === "All Platforms") {
       setSearchCampaigns(campaignList);
       return;
     }
@@ -36,7 +36,7 @@ export default function Dashboard() {
 
   const handleStatusOnChange = (e) => {
     const status = e.target.value;
-    if (status == "All Status") {
+    if (status === "All Status") {
       setSearchCampaigns(campaignList);
       return;
     }
@@ -122,6 +122,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     setSearchCampaigns(campaignList);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const section = () => (

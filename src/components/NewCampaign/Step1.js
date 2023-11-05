@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Base from "../core/Base";
 import StepsTitle from "./StepsTitle";
 import Icon1 from "../../assets/step1/icon1.svg";
@@ -19,10 +19,6 @@ import ActiveIcon6 from "../../assets/step1/activeIcon6.svg";
 import ActiveIcon7 from "../../assets/step1/activeIcon7.svg";
 import ActiveIcon8 from "../../assets/step1/activeIcon8.svg";
 import ActiveIcon9 from "../../assets/step1/activeIcon9.svg";
-import Step1Light from "../../assets/progress/step1light.svg";
-import Step2Dark from "../../assets/progress/step2dark.svg";
-import Step3Dark from "../../assets/progress/step3dark.svg";
-import Step4Dark from "../../assets/progress/step4dark.svg";
 
 import OptionCard from "./OptionCard";
 import { useNavigate } from "react-router-dom";

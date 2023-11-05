@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ZocketLogo from "../../assets/leftNav/zocket.svg";
 import HomeLogo from "../../assets/leftNav/home.svg";
 import CampaignLogo from "../../assets/leftNav/campaign.svg";

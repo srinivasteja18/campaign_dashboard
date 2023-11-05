@@ -38,9 +38,9 @@ export default function Campaign(props) {
         <img
           className="campaign-header-2-item"
           src={
-            props.data.platform == "Facebook"
+            props.data.platform === "Facebook"
               ? Facebook
-              : props.data.platform == "Google"
+              : props.data.platform === "Google"
               ? Google
               : Youtube
           }
@@ -49,9 +49,9 @@ export default function Campaign(props) {
         <div
             id="campaign-status"
           className={
-            status == "Live now"
+            status === "Live now"
               ? "campaign-header-2-item campaign-status campaign-status-live"
-              : status == "Paused"
+              : status === "Paused"
               ? "campaign-header-2-item campaign-status campaign-status-paused"
               : "campaign-header-2-item campaign-status campaign-status-exhausted"
           }
@@ -61,7 +61,7 @@ export default function Campaign(props) {
         <div className="campaign-actions campaign-header-2-item">
           {props.data.actions ? (
             props.data.actions.map((action, index) => (
-              <img key={index} src={action == "edit" ? Edit : Delete} />
+              <img key={index} src={action === "edit" ? Edit : Delete} alt="actions" />
             ))
           ) : (
             <></>
