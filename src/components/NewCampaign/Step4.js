@@ -8,6 +8,7 @@ import Pic2 from "../../assets/step4/pic2.svg";
 import Pic3 from "../../assets/step4/pic3.svg";
 import Pic4 from "../../assets/step4/pic4.svg";
 import { useNavigate } from "react-router-dom";
+import ProgressBar from "./ProgressBar";
 
 export default function Step4() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -56,6 +57,7 @@ export default function Step4() {
   const section = () => (
     <>
       <StepsTitle />
+      <ProgressBar progressValue={100} step="step4"/>
       <div className="details-section">
         <div className="details-title">
           <span className="details-title-text">Ready to go</span>

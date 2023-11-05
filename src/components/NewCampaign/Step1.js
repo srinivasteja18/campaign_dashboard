@@ -19,9 +19,14 @@ import ActiveIcon6 from "../../assets/step1/activeIcon6.svg";
 import ActiveIcon7 from "../../assets/step1/activeIcon7.svg";
 import ActiveIcon8 from "../../assets/step1/activeIcon8.svg";
 import ActiveIcon9 from "../../assets/step1/activeIcon9.svg";
+import Step1Light from "../../assets/progress/step1light.svg";
+import Step2Dark from "../../assets/progress/step2dark.svg";
+import Step3Dark from "../../assets/progress/step3dark.svg";
+import Step4Dark from "../../assets/progress/step4dark.svg";
 
 import OptionCard from "./OptionCard";
 import { useNavigate } from "react-router-dom";
+import ProgressBar from "./ProgressBar";
 
 export default function Step1() {
   const [activeOption, setActiveOption] = useState(0);
@@ -97,10 +102,10 @@ export default function Step1() {
     },
   ];
 
-
   const section = () => (
     <>
-      <StepsTitle/>
+      <StepsTitle />
+      <ProgressBar progressValue={25} step="step1" />
 
       <div className="details-section">
         <div className="details-title">
@@ -125,14 +130,13 @@ export default function Step1() {
         </div>
       </div>
       <div className="button-wrapper">
-      <button
-        onClick={() => navigate("/Campaign/new/2")}
-        className="continue-button"
-      >
-        <div className="dashboard-create-text">Continue</div>
-      </button>
+        <button
+          onClick={() => navigate("/Campaign/new/2")}
+          className="continue-button"
+        >
+          <div className="dashboard-create-text">Continue</div>
+        </button>
       </div>
-      
     </>
   );
 

@@ -14,6 +14,7 @@ import Check from "../../assets/step2/check.svg";
 import ActiveCheck from "../../assets/step2/activeCheck.svg";
 import { useNavigate } from "react-router-dom";
 import OptionCard from "./OptionCard";
+import ProgressBar from "./ProgressBar";
 
 export default function Step2() {
   const [activeOption, setActiveOption] = useState(0);
@@ -101,6 +102,7 @@ export default function Step2() {
   const section = () => (
     <>
       <StepsTitle />
+      <ProgressBar progressValue={50} step="step2" />
       <div className="details-section">
         <div className="details-title">
           <span className="details-title-text">Choose the Product</span>

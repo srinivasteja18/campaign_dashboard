@@ -3,6 +3,7 @@ import Base from "../core/Base";
 import StepsTitle from "./StepsTitle";
 import { useNavigate } from "react-router-dom";
 import LocationIcon from "../../assets/step3/location.svg";
+import ProgressBar from "./ProgressBar";
 
 export default function Step3() {
   const [timeline, setTimeline] = useState(false);
@@ -13,6 +14,7 @@ export default function Step3() {
   const section = () => (
     <>
       <StepsTitle />
+      <ProgressBar progressValue={80} step="step3"/>
       <div className="settings-details">
         <div className="details-section setting-section">
           <div className="details-title">
