@@ -9,6 +9,7 @@ https://zocket-campaign.netlify.app/
 - User can filter the Camapign based on `Platform`  `Status`.
 - User can create a Camapaign
 - Users can choose options and proceed to next step.
+- `Start Campaign` button navigates to the Campaign Dashboard
 
 ### Assumptions and Expectations
 - Focused mainly on Frontend part
