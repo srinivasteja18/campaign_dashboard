@@ -4,20 +4,27 @@ import Google from "../../assets/dashboard/google.svg";
 import Youtube from "../../assets/dashboard/youtube.svg";
 import Delete from "../../assets/dashboard/delete.svg";
 import Edit from "../../assets/dashboard/edit.svg";
-import Switch from 'react-input-switch';
+import Switch from "react-switch";
 
 export default function Campaign(props) {
-
-    const [toggle, setToggle] = useState(props.data.toggle);
+  const [toggle, setToggle] = useState(props.data.toggle);
 
   const status = props.data.status;
- 
 
   return (
     <div className="campaign-item">
       <div className="toggle-div">
         <input type="checkbox" />
-        <Switch value={toggle} onChange={setToggle} />
+        <Switch
+          width={40}
+          height={20}
+          checked={toggle}
+          onChange={setToggle}
+          onColor="#0F6EFF"
+          offColor="#DADEE3"
+          checkedIcon=""
+          uncheckedIcon=""
+        />
       </div>
       <div className="campaign-details">
         <img src={props.data.image} alt={props.data.name} />
@@ -47,7 +54,7 @@ export default function Campaign(props) {
           alt={props.data.platform}
         />
         <div
-            id="campaign-status"
+          id="campaign-status"
           className={
             status === "Live now"
               ? "campaign-header-2-item campaign-status campaign-status-live"
@@ -61,7 +68,11 @@ export default function Campaign(props) {
         <div className="campaign-actions campaign-header-2-item">
           {props.data.actions ? (
             props.data.actions.map((action, index) => (
-              <img key={index} src={action === "edit" ? Edit : Delete} alt="actions" />
+              <img
+                key={index}
+                src={action === "edit" ? Edit : Delete}
+                alt="actions"
+              />
             ))
           ) : (
             <></>

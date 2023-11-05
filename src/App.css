@@ -389,6 +389,25 @@ input:focus {
 .campaign-header-2-item{
   min-width: 10%;
 }
+.campaign-toggle{
+  border-radius: 47.06px;
+  height: 20px;
+  width: 40px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.campaign-toggle-2{
+margin-left: -1rem;
+border-radius: 47.06px;
+height: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 40px;
+cursor: pointer;
+}
 .campaign-actions{
   display: flex;
   gap: 1rem;
