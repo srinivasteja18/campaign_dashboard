@@ -14,7 +14,7 @@ export default function OptionCard(props) {
         </div>
         {
           props.data.check ? <>
-            <img id="checkIcon" src={props.active ? props.data.activeCheck : props.data.check} alt={props.data.name}/>
+            <img loading="lazy" id="checkIcon" src={props.active ? props.data.activeCheck : props.data.check} alt={props.data.name}/>
 
           </> : <></>
         }
